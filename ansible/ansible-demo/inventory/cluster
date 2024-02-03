@@ -1,0 +1,10 @@
+[deploy]
+server1 ansible_host=192.168.0.111 ansible_user=vagrant ansible_port=22 ansible_ssh_private_key_file=/home/vagrant/code/id_rsa
+
+[managers]
+server2 ansible_host=192.168.0.112 ansible_user=vagrant ansible_port=22 ansible_ssh_private_key_file=/home/vagrant/code/id_rsa
+server3 ansible_host=192.168.0.113 ansible_user=vagrant ansible_port=22 ansible_ssh_private_key_file=/home/vagrant/code/id_rsa
+
+[workers]
+server4 ansible_host=192.168.0.114 ansible_user=vagrant ansible_port=22 ansible_ssh_private_key_file=/home/vagrant/code/id_rsa
+server5 ansible_host=192.168.0.115 ansible_user=vagrant ansible_port=22 ansible_ssh_private_key_file=/home/vagrant/code/id_rsa

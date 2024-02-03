@@ -1,0 +1,25 @@
+---
+- name: Deploy server
+  hosts: deploy
+  roles:
+    - role: deploy
+      tags: deploy
+    - role: preconfig
+      tags: preconfig
+  # - deploy
+  # - swarminit
+
+- name: Manager
+  hosts: managers
+  roles:
+    - role: preconfig
+      tags: preconfig
+  # - swarm_join
+
+- name: Worker
+  hosts: workers
+  roles:
+    - role: preconfig
+      tags: preconfig
+  # - swarm_join
+
